@@ -1,16 +1,21 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 function Navbar() {
     return (
-        <div>
+        <nav>
             <div className="logo">
-                <h1>Shoes</h1>
+                <Image 
+                    src="/jimmy_logo.jpg" 
+                    width={128}
+                    height={77}
+                />
             </div>
             <Link href="/"><a>Home</a></Link><br />
             <Link href="/about"><a>About</a></Link><br />
             <Link href="/jimmychose"><a>Shoes Listings</a></Link>
-        </div>
+        </nav>
     )
 }
 
