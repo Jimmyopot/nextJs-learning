@@ -1,4 +1,5 @@
 import styles from '../../styles/Jimmy.module.css';
+import Link from 'next/link'
 
 export const getStaticProps = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users');
@@ -15,11 +16,11 @@ function jimmy_index({ shoes }) {
         <div>
             <h1>All Names</h1>
             {shoes.map(shoe => (
-                <div key={shoe.id}>
+                <Link href={'/jimmy/' + shoe.id}  key={shoe.id}>
                     <a className={styles.single}>
                         <h3>{ shoe.name }</h3>
                     </a>
-                </div>
+                </Link>
             ))}
         </div>
     )

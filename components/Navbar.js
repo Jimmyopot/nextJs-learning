@@ -14,7 +14,7 @@ function Navbar() {
             </div>
             <Link href="/"><a>Home</a></Link><br />
             <Link href="/about"><a>About</a></Link><br />
-            <Link href="/jimmychose"><a>Shoes Listings</a></Link>
+            <Link href="/jimmy"><a>Shoes Listings</a></Link>
         </nav>
     )
 }
